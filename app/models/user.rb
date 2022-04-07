@@ -5,6 +5,10 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
 
+  validates :name, uniqueness: true
+  validates :introduction, length: { maximum: 50 }
+
+
 has_many :book, dependent: :destroy
 
 
