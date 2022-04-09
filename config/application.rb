@@ -10,6 +10,7 @@ module Bookers2
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
+    config.hosts << "2d14c0f994d04aef829c3a0a03155b7b.vfs.cloud9.ap-northeast-1.amazonaws.com"
 
     # Configuration for the application, engines, and railties goes here.
     #
