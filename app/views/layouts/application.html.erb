@@ -67,11 +67,12 @@
         </div>
       </nav>
     </header>
-    <%= yield %>
-  </body>
+
   <% flash.each do |key, value| %>
     <%= content_tag(:div, value, class: "#{key}") %>
   <% end %>
+    <%= yield %>
+  </body>
   <footer>
   <div class="container mt-5">
   	<div class="row">
